@@ -7,14 +7,14 @@
     <!-- We've seen attributes before -->
     <meta charset="utf-8" />
 
-
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form -->
 </head>
 
 
 
 <body>
     <!-- Forms capture information with "inputs" -->
-    <form action="/endpoint" method="post">
+    <form action="." method="post">
         <h1>Some information about Someone</h1>
         <div>
             <label for="name"> Name
@@ -51,6 +51,8 @@
                 <input id='gender-diverse' type='radio' name='gender' value='diverse' />
             </div>
         </fieldset>
+
+        <input type='submit' value='Submit' />
     </form>
 </body>
 

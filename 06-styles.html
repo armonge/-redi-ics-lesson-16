@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>ReDI School</title>
+    <meta charset="utf-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/style -->
+
+    <!-- 
+    All HTML tags support the `style` attribute, and with this you 
+    can change how an element in the website looks
+
+    Some common styles attriubutes are
+    margin
+    padding
+    color
+    text-align
+    background-color
+    display
+    -->
+
+</head>
+
+<body>
+    <form method="post" style="width: 50%; margin: 0 auto;">
+        <h1 style="color: gray">Some information about Someone</h1>
+        <div style="margin-bottom: 1em">
+            <label for="name" style="width: 80px; display: inline-block;">Name:</label>
+            <input id='name' type='text' name='name' />
+        </div>
+        <div style="margin-bottom: 1em">
+            <label for="age" style="width: 80px; display: inline-block;">Age:</label>
+            <input id='age' type='number' name='age' min='0' />
+        </div>
+        <div style="margin-bottom: 1em">
+            <label for='birthdate' style="display: inline-block; width: 80px;">Birthdate:</label>
+            <input id='birthdate' type='date' name='birthdate' />
+        </div>
+        <fieldset style="margin-bottom: 1em;"'>
+            <legend> Gender
+            </legend>
+            <div>
+                <label for=' gender-male'>Male</label>
+            <input id='gender-male' type='radio' name='gender' value='male' />
+
+            </div>
+            <div>
+                <label for='gender-female'>Female</label>
+                <input id='gender-female' type='radio' name='gender' value='female' />
+
+            </div>
+            <div>
+                <label for='gender-diverse'>Diverse</label>
+                <input id='gender-diverse' type='radio' name='gender' value='diverse' />
+            </div>
+        </fieldset>
+        <div style="text-align: right;">
+            <input type="Submit" value="Submit" />
+        </div>
+    </form>
+</body>
+
+</html>

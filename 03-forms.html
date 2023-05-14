@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>ReDI School</title>
+    <!-- We've seen attributes before -->
+    <meta charset="utf-8" />
+
+
+</head>
+
+
+
+<body>
+    <!-- Forms capture information with "inputs" -->
+    <form action="/endpoint" method="post">
+        <h1>Some information about Someone</h1>
+        <div>
+            <label for="name"> Name
+            </label>
+            <!-- Attributes can change a tag behavior or appeareance -->
+            <input id='name' type='text' name='name' />
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <!-- The attribute type makes it so we our shows a number picker -->
+            <input id='age' type='number' name='number' min='0' />
+        </div>
+        <div>
+            <!-- Instead of age we could ask for birthdate -->
+            <label for='birthdate'>Birthdate</label>
+            <!-- with a datepicker -->
+            <input id='birthdate' type='date' name='birthdate' />
+        </div>
+        <fieldset>
+            <legend> Gender
+            </legend>
+            <div>
+                <label for='gender-male'>Male</label>
+                <input id='gender-male' type='radio' name='gender' value='male' />
+
+            </div>
+            <div>
+                <label for='gender-female'>Female</label>
+                <input id='gender-female' type='radio' name='gender' value='female' />
+
+            </div>
+            <div>
+                <label for='gender-diverse'>Diverse</label>
+                <input id='gender-diverse' type='radio' name='gender' value='diverse' />
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

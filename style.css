@@ -1,32 +1,40 @@
-/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox */
 html {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 header {
-    background: purple;
-    height: 100px;
+  background: purple;
+  height: 100px;
 }
 
 h1 {
-    text-align: center;
-    color: white;
-    line-height: 100px;
-    margin: 0;
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
 }
 
 article {
-    padding: 10px;
-    margin: 10px;
-    background: aqua;
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
 }
 
 /* Add your flexbox CSS below here */
 
+/*
+ * Here's some documentation about flexbox
+ * https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox 
+ *
+ * And here's an actual exercise, which everyone who wants to learn on flexbox should
+ * learn again
+ * https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills 
+ * */
 section {
-    display: flex;
+  display: flex;
 }
+

@@ -1,98 +1,94 @@
 <!DOCTYPE html>
 <html>
-
-
-<head>
+  <head>
     <title>ReDI School</title>
     <meta charset="utf-8" />
     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS -->
 
     <style>
-        form {
-            width: 50%;
-            margin: 0 auto;
-        }
+      form {
+        width: 50%;
+        margin: 0 auto;
+      }
 
-        h1 {
-            color: gray;
-        }
+      h1 {
+        color: gray;
+      }
 
-        h1:hover {
-            color: blue;
-        }
+      h1:hover {
+        color: blue;
+      }
 
-        form>div,
-        form>fieldset {
-            margin-bottom: 1em;
-        }
+      form > div,
+      form > fieldset {
+        margin-bottom: 1em;
+      }
 
-        label {
-            width: 80px;
-            display: inline-block;
-        }
+      label {
+        width: 80px;
+        display: inline-block;
+      }
 
-        form>div:last-child {
-            text-align: right;
-        }
-        .submit-button {
-            color: white;
-            background-color: blue;
-            border: 0;
-            border-radius: 5px;
-            padding: 5px;
-        }
-        .reset-button {
-            color: white;
-            background-color: red;
-            border: 0;
-            border-radius: 5px;
-            padding: 5px;
-        }
+      form > div:last-child {
+        text-align: right;
+      }
+      .submit-button {
+        color: white;
+        background-color: blue;
+        border: 0;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .reset-button {
+        color: white;
+        background-color: red;
+        border: 0;
+        border-radius: 5px;
+        padding: 5px;
+      }
     </style>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <form method="post">
-        <h1>Some information about Someone</h1>
+      <h1>Some information about Someone</h1>
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" />
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input id="age" type="number" name="age" min="0" />
+      </div>
+      <div>
+        <label for="birthdate">Birthdate:</label>
+        <input id="birthdate" type="date" name="birthdate" />
+      </div>
+      <fieldset style="margin-bottom: 1em">
+        <legend>Gender</legend>
         <div>
-            <label for="name">Name:</label>
-            <input id='name' type='text' name='name' />
+          <label for=" gender-male">Male</label>
+          <input id="gender-male" type="radio" name="gender" value="male" />
         </div>
         <div>
-            <label for="age">Age:</label>
-            <input id='age' type='number' name='age' min='0' />
+          <label for="gender-female">Female</label>
+          <input id="gender-female" type="radio" name="gender" value="female" />
         </div>
         <div>
-            <label for='birthdate'>Birthdate:</label>
-            <input id='birthdate' type='date' name='birthdate' />
+          <label for="gender-diverse">Diverse</label>
+          <input
+            id="gender-diverse"
+            type="radio"
+            name="gender"
+            value="diverse"
+          />
         </div>
-        <fieldset style="margin-bottom: 1em;"'>
-            <legend> Gender
-            </legend>
-            <div>
-                <label for=' gender-male'>Male</label>
-            <input id='gender-male' type='radio' name='gender' value='male' />
-
-            </div>
-            <div>
-                <label for='gender-female'>Female</label>
-                <input id='gender-female' type='radio' name='gender' value='female' />
-
-            </div>
-            <div>
-                <label for='gender-diverse'>Diverse</label>
-                <input id='gender-diverse' type='radio' name='gender' value='diverse' />
-            </div>
-        </fieldset>
-        <div>
-            <!-- We now have classes -->
-            <input type="submit" value="Submit"  class="submit-button"/>
-            <input type="reset" value="Reset" class="reset-button" />
-            
-        </div>
+      </fieldset>
+      <div>
+        <!-- We now have classes -->
+        <input type="submit" value="Submit" class="submit-button" />
+        <input type="reset" value="Reset" class="reset-button" />
+      </div>
     </form>
-</body>
-
+  </body>
 </html>
